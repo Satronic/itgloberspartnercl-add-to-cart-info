@@ -10,10 +10,12 @@
     "docs": "0.x",
     "store": "0.x"
   },
-  "dependencies": {},
-  "registries": [
-    "smartcheckout"
-  ],
+  "dependencies": {
+    "vtex.checkout-resources": "0.x",
+    "vtex.order-manager": "0.x",
+    "vtex.product-context": "0.x"
+  },
+  "registries": ["smartcheckout"],
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
