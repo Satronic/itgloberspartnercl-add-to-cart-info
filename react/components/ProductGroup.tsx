@@ -13,26 +13,40 @@ interface Product {
   price: number
 }
 
-type ListProductProps = {
-  listProducts: Product[]
+interface Classes {
+  container: string
+  containerItem: string
+  containerItemLeft: string
+  containerItemRight: string
 }
 
-const ProductGroup: React.FC<ListProductProps> = ({ listProducts }) => {
+type ListProductProps = {
+  listProducts: Product[]
+  classes: Classes
+}
+
+const ProductGroup: React.FC<ListProductProps> = ({
+  listProducts,
+  classes,
+}) => {
   // eslint-disable-next-line no-console
   console.log('Array de Productos: ', listProducts)
 
   return (
-    <div>
+    <div className={classes.container}>
       <p>Este es litado de productos: </p>
       {listProducts.map((product: Product, index: number) => {
         return (
-          <div key={index}>
-            <img src={product.imageUrls.at1x} alt={product.name} />
-            <p>{product.id}</p>
-            <p>{product.name}</p>
-            <p>Cant: {product.quantity} und</p>
-            <p>${product.price * product.quantity}</p>
-            <hr />
+          <div key={index} className={classes.containerItem}>
+            <div className={classes.containerItemLeft}>
+              <img src={product.imageUrls.at1x} alt={product.name} />
+            </div>
+            <div className={classes.containerItemRight}>
+              <p className="ma1 f6">{product.id}</p>
+              <p className="ma1 f6">{product.name}</p>
+              <p className="ma1 f6">Cant: {product.quantity} und</p>
+              <p className="ma1 f6">${product.price * product.quantity}</p>
+            </div>
           </div>
         )
       })}
