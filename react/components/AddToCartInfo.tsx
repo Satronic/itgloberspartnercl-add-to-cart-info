@@ -4,6 +4,7 @@ import { useProduct } from 'vtex.product-context'
 import { useOrderForm } from 'vtex.order-manager/OrderForm'
 
 import ButtonGroup from './ButtonGroup'
+import Totalizers from './Totalizers'
 
 const AddToCartInfo = () => {
   const productInfo = useProduct()
@@ -19,6 +20,7 @@ const AddToCartInfo = () => {
 
   return (
     <>
+      <Totalizers />
       <ButtonGroup />
     </>
   )
