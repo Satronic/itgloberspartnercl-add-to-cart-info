@@ -13,7 +13,7 @@ type ListTotalizersProps = {
 }
 
 const Totalizers: React.FC<ListTotalizersProps> = ({ listTotalizers }) => {
-  const totalItems = listTotalizers.length
+  const totalItems: number = listTotalizers.length
   const [price, ,] = listTotalizers
   const totalPrice = price?.value
 

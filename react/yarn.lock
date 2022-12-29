@@ -1499,6 +1499,11 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.1.tgz#5668c0bce55a91f2b9566b1d8a4c0a8dbbc79764"
   integrity sha512-wmk0xQI6Yy7Fs/il4EpOcflG4uonUpYGqvZARESLc2oy4u69fkatFLbJOeW4Q6awO15P4rduAe6xkwHevpXcUQ==
 
+"@vtex/css-handles@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@vtex/css-handles/-/css-handles-1.1.3.tgz#30bd1010f2907443188738f74dd11d3b6b4ac624"
+  integrity sha512-DkqnzMf5jW6lQ1L8wYb9fnXyh0FqZym8qEokGYjeLUqBLBAiVK8XbI4U0ezFswWTOJ3iHZUkUjqPt5WodxR29w==
+
 "@vtex/test-tools@^3.3.2":
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/@vtex/test-tools/-/test-tools-3.3.2.tgz#b131653d85f381c82efea12a13d08fc9b1f65c85"
