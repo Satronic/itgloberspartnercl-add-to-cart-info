@@ -3,6 +3,8 @@ import React from 'react'
 import { useProduct } from 'vtex.product-context'
 import { useOrderForm } from 'vtex.order-manager/OrderForm'
 
+import ButtonGroup from './ButtonGroup'
+
 const AddToCartInfo = () => {
   const productInfo = useProduct()
   const {
@@ -15,7 +17,11 @@ const AddToCartInfo = () => {
   // eslint-disable-next-line no-console
   console.log('Order Information: ', items, totalizers)
 
-  return <div>This is the product info: </div>
+  return (
+    <>
+      <ButtonGroup />
+    </>
+  )
 }
 
 export default AddToCartInfo
