@@ -22,7 +22,7 @@ const AddToCartInfo = () => {
   return (
     <>
       <ProductGroup listProducts={items} />
-      <Totalizers />
+      <Totalizers listTotalizers={totalizers} />
       <ButtonGroup />
     </>
   )
